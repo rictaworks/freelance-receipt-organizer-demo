@@ -41,7 +41,9 @@ class ApplicationController < ActionController::API
     create_new_session
   end
 
-  # 新規セッション発行（F6）。UUID v4 / HttpOnly・SameSite=Lax Cookie。
+  # 新規セッション発行（F6）。UUID v4 / HttpOnly Cookie。
+  # 本番はフロント（Vercel）と API（Railway）が別オリジンのため SameSite=None・Secure が必須
+  #（クロスサイト fetch で Cookie を送るため）。開発は同一オリジン相当のため Lax。
   def create_new_session
     session_id = SecureRandom.uuid
     now = Time.current
@@ -57,7 +59,7 @@ class ApplicationController < ActionController::API
     cookies[:session_id] = {
       value: session_id,
       httponly: true,
-      same_site: :lax,
+      same_site: EnvironmentPolicy.production? ? :none : :lax,
       path: "/",
       secure: EnvironmentPolicy.production?
     }
