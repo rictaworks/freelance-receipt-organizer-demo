@@ -1,0 +1,35 @@
+sequenceDiagram
+    actor User as ユーザー
+    participant FE as Next.js
+    participant BE as Rails API
+    participant OCR as FastAPI(OCR)
+    participant DB as SQLite
+
+    User->>FE: 初回アクセス
+    FE->>BE: GET /session
+    BE->>DB: セッション作成(UUID)
+    BE-->>FE: Set-Cookie(HttpOnly)
+
+    User->>FE: 領収書画像アップロード
+    FE->>BE: POST /receipts (画像+ハニーポット欄)
+    alt ハニーポットに値あり
+        BE-->>FE: 200(無言破棄)
+    else 正常
+        BE->>BE: サイズ/形式検証
+        BE->>OCR: 画像送信(ローカル間通信)
+        OCR->>OCR: OpenCV前処理→pytesseract
+        OCR-->>BE: 全文テキスト+信頼度
+        BE->>BE: 日付/金額/店名抽出(和暦変換等)
+        BE->>DB: ルールマスタ照会→科目分類
+        BE->>DB: 重複チェック(日付+金額+店名)
+        BE->>DB: INSERT (session_id付与)
+        BE-->>FE: 抽出結果+警告(重複/0円以下/未分類)
+        FE-->>User: 確認画面(手動修正可)
+    end
+
+    User->>FE: 帳票生成ボタン
+    FE->>BE: POST /reports
+    BE->>DB: WHERE session_id で月×科目集計
+    BE->>BE: ReportLabでPDF生成(注記付き)
+    BE->>DB: reports INSERT
+    BE-->>FE: プレビューHTML+PDFリンク

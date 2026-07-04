@@ -1,0 +1,54 @@
+# === シークレット（絶対にコミットしない） ===
+.env
+.env.*
+!.env.example
+config/master.key
+config/credentials/*.key
+*.pem
+
+# === 個人設定（共有しない） ===
+CLAUDE.local.md
+.claude/settings.local.json
+
+# === 依存・ビルド成果物 ===
+node_modules/
+.next/
+out/
+dist/
+build/
+tmp/
+log/
+*.log
+
+# === Rails ===
+/db/*.sqlite3
+/db/*.sqlite3-*
+/storage/
+
+# === Python / FastAPI ===
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# === OS / エディタ ===
+.DS_Store
+.idea/
+.vscode/*
+!.vscode/extensions.json
+
+# === 追跡するのは CLAUDE.md / README.md / SPEC/ のみ ===
+# 上記3点以外の直下エントリを明示的に除外する（後勝ちルールで .env.example も除外）
+.claude/
+CLIENT/
+DEBUG/
+DELETE/
+ENV/
+TASKS/
+WORK/
+app-ui/
+test/
+.env.example
+freelance-receipt-organizer-demo_設計書.md
+package.json
+package-lock.json

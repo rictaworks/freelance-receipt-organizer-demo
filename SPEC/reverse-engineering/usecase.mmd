@@ -1,0 +1,25 @@
+flowchart TB
+    subgraph system[freelance-receipt-organizer-demo]
+        UC1((領収書画像を<br/>アップロードする))
+        UC2((抽出結果を<br/>確認・修正する))
+        UC3((勘定科目を<br/>変更する))
+        UC4((月別・科目別<br/>集計を閲覧する))
+        UC5((収支内訳書風<br/>帳票を生成する))
+        UC6((PDFを<br/>ダウンロードする))
+        UC7((日次リセット))
+        UC8((Bot投稿を破棄))
+    end
+    User([フリーランス<br/>ユーザー])
+    Sched([スケジューラ<br/>JST03:00])
+    Bot([Bot])
+
+    User --> UC1
+    User --> UC2
+    User --> UC3
+    User --> UC4
+    User --> UC5
+    UC5 -. include .-> UC4
+    User --> UC6
+    UC6 -. include .-> UC5
+    Sched --> UC7
+    Bot --> UC8

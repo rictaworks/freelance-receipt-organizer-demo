@@ -1,0 +1,41 @@
+erDiagram
+    SESSIONS ||--o{ RECEIPTS : "所有"
+    SESSIONS ||--o{ REPORTS : "所有"
+    ACCOUNT_CATEGORIES ||--o{ CLASSIFY_RULES : "持つ"
+    ACCOUNT_CATEGORIES ||--o{ RECEIPTS : "分類される"
+
+    SESSIONS {
+        string session_id PK "UUID v4"
+        datetime created_at
+        datetime last_accessed_at
+    }
+    RECEIPTS {
+        integer id PK
+        string session_id FK "オーナーキー"
+        integer category_id FK "null=未分類"
+        date issued_on "抽出/手動入力"
+        integer amount_yen "整数円 正数のみ"
+        string store_name
+        string image_path
+        float ocr_confidence
+        boolean manually_edited
+        datetime created_at
+    }
+    ACCOUNT_CATEGORIES {
+        integer id PK
+        string code "科目コード"
+        string name "科目名 12件"
+    }
+    CLASSIFY_RULES {
+        integer id PK
+        integer category_id FK
+        string keyword "36件"
+        integer priority
+    }
+    REPORTS {
+        integer id PK
+        string session_id FK "オーナーキー"
+        integer target_year
+        string pdf_path
+        datetime generated_at
+    }

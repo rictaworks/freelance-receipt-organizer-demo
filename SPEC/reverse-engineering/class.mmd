@@ -1,0 +1,73 @@
+classDiagram
+    class Session {
+        +String sessionId
+        +DateTime createdAt
+        +touch()
+    }
+    class Receipt {
+        +int id
+        +String sessionId
+        +Date issuedOn
+        +int amountYen
+        +String storeName
+        +float ocrConfidence
+        +bool manuallyEdited
+        +assignCategory(c)
+        +isDuplicateOf(r) bool
+    }
+    class AccountCategory {
+        +int id
+        +String code
+        +String name
+    }
+    class ClassifyRule {
+        +int id
+        +String keyword
+        +int priority
+        +matches(text) bool
+    }
+    class OcrService {
+        +preprocess(image) Image
+        +extractText(image) OcrResult
+    }
+    class FieldExtractor {
+        +extractDate(text) Date
+        +extractAmount(text) int
+        +extractStoreName(text) String
+        -convertWareki(text) String
+        -adjustYearlessDate(d) Date
+    }
+    class RuleClassifier {
+        +classify(text) AccountCategory
+        -resolveTie(candidates) AccountCategory
+    }
+    class Aggregator {
+        +monthlyByCategory(sessionId) Map
+        +yearlyTotal(sessionId) int
+    }
+    class ReportGenerator {
+        +generatePdf(sessionId, year) Report
+        -renderTemplate(summary) Html
+    }
+    class DailyResetJob {
+        +runAt0300JST()
+    }
+    class HoneypotFilter {
+        +shouldDiscard(params) bool
+    }
+
+    Session "1" --> "*" Receipt
+    Session "1" --> "*" Report
+    AccountCategory "1" --> "*" ClassifyRule
+    AccountCategory "1" --> "*" Receipt
+    OcrService ..> FieldExtractor : テキスト受け渡し
+    FieldExtractor ..> RuleClassifier
+    RuleClassifier ..> ClassifyRule
+    Aggregator ..> Receipt
+    ReportGenerator ..> Aggregator
+    class Report {
+        +int id
+        +String sessionId
+        +int targetYear
+        +String pdfPath
+    }
