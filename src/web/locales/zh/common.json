@@ -10,6 +10,13 @@
     "aggregations": "汇总",
     "reports": "报表"
   },
+  "layout": {
+    "demoBanner": "这是演示版。服务器重启时数据可能会被重置。",
+    "backToDemos": "返回演示列表",
+    "consult": "咨询请点这里",
+    "footerLegal": "使用条款・免责声明・联系方式",
+    "copyright": "© 2026 Ricta Works"
+  },
   "common": {
     "loading": "加载中…",
     "save": "保存",

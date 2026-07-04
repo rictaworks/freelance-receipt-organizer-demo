@@ -10,6 +10,13 @@
     "aggregations": "集計",
     "reports": "帳票"
   },
+  "layout": {
+    "demoBanner": "これはデモ版です。データはサーバー再起動時にリセットされる場合があります。",
+    "backToDemos": "デモ一覧へ",
+    "consult": "ご相談はこちら",
+    "footerLegal": "利用規約・免責事項・連絡先",
+    "copyright": "© 2026 Ricta Works"
+  },
   "common": {
     "loading": "読み込み中…",
     "save": "保存",
