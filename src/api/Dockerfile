@@ -12,8 +12,10 @@ FROM docker.io/library/ruby:$RUBY_VERSION-slim AS base
 WORKDIR /rails
 
 # Install base packages
+# python3 / python3-reportlab は帳票 PDF 生成（lib/report_pdf.py）を実行時に呼び出すため必須。
 RUN apt-get update -qq && \
-    apt-get install --no-install-recommends -y curl libjemalloc2 libvips sqlite3 && \
+    apt-get install --no-install-recommends -y \
+      curl libjemalloc2 libvips sqlite3 python3 python3-reportlab && \
     rm -rf /var/lib/apt/lists /var/cache/apt/archives
 
 # Set production environment

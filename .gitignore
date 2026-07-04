@@ -63,7 +63,7 @@ TASKS/
 WORK/
 app-ui/
 test/
-.env.example
 freelance-receipt-organizer-demo_設計書.md
-package.json
-package-lock.json
+# ルートの図解ツール用 package.json のみ無視する（フロントの src/web/package.json は追跡する）。
+/package.json
+/package-lock.json
