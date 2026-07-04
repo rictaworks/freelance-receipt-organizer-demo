@@ -50,9 +50,12 @@ module Api
     config.middleware.use ActionDispatch::Cookies
 
     # フロント（Next.js）からの Cookie 付きクロスオリジン通信を許可する。
+    # 許可オリジンは FRONTEND_ORIGIN（カンマ区切りで複数可。例: 本番ドメイン + プレビュー URL）。
+    _frontend_origins = ENV.fetch("FRONTEND_ORIGIN", "http://localhost:3000")
+                           .split(",").map(&:strip).reject(&:empty?)
     config.middleware.insert_before 0, Rack::Cors do
       allow do
-        origins ENV.fetch("FRONTEND_ORIGIN", "http://localhost:3000")
+        origins(*_frontend_origins)
         resource "*",
                  headers: :any,
                  methods: %i[get post patch put delete options head],
