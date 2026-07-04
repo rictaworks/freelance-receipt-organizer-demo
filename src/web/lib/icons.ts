@@ -25,6 +25,8 @@ import {
   faArrowRightFromBracket,
   faFilePdf,
   faCircleExclamation,
+  faCommentDots,
+  faArrowLeft,
 } from "@fortawesome/free-solid-svg-icons";
 
 // Next.js では layout での "@fortawesome/fontawesome-svg-core/styles.css" 明示 import と併用するため
@@ -55,6 +57,8 @@ export const icons = {
   exit: faArrowRightFromBracket,
   pdf: faFilePdf,
   exclamation: faCircleExclamation,
+  consult: faCommentDots,
+  back: faArrowLeft,
 };
 
 export type IconName = keyof typeof icons;

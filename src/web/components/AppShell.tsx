@@ -29,6 +29,12 @@ export function AppShell({ children }: { children: ReactNode }) {
 
   return (
     <div className="app-shell">
+      {/* 全デモ共通：デモ版アンバーバナー（ヘッダー外・最上部） */}
+      <div className="demo-banner" role="note">
+        <Icon name="warning" />
+        <span>{t("layout.demoBanner")}</span>
+      </div>
+
       <header className="app-header">
         <div className="app-header__brand">
           <span className="app-header__logo" aria-hidden="true">
@@ -37,7 +43,17 @@ export function AppShell({ children }: { children: ReactNode }) {
           <span className="app-header__title">{t("app.title")}</span>
           <span className="badge badge--demo">{t("app.demoBadge")}</span>
         </div>
-        <LanguageSwitcher />
+        <div className="app-header__actions">
+          {/* 全デモ共通：デモ一覧へ戻る導線 */}
+          <a
+            href="https://rictaworks.jp/#demos"
+            className="app-header__demos-link"
+          >
+            <Icon name="back" />
+            <span>{t("layout.backToDemos")}</span>
+          </a>
+          <LanguageSwitcher />
+        </div>
       </header>
 
       <div className="app-body">
@@ -68,6 +84,28 @@ export function AppShell({ children }: { children: ReactNode }) {
 
         <main className="app-main">{children}</main>
       </div>
+
+      {/* 全デモ共通：フッター（/legal への導線） */}
+      <footer className="app-footer">
+        <Link href="/legal" className="app-footer__link">
+          {t("layout.footerLegal")}
+        </Link>
+        <span className="app-footer__sep" aria-hidden="true">
+          |
+        </span>
+        <span>{t("layout.copyright")}</span>
+      </footer>
+
+      {/* 全デモ共通：右下固定のご相談ボタン */}
+      <a
+        href="https://rictaworks.jp/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="consult-fab"
+      >
+        <Icon name="consult" />
+        <span>{t("layout.consult")}</span>
+      </a>
     </div>
   );
 }

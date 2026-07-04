@@ -10,6 +10,13 @@
     "aggregations": "Totales",
     "reports": "Informe"
   },
+  "layout": {
+    "demoBanner": "Esta es una demo. Los datos pueden restablecerse al reiniciar el servidor.",
+    "backToDemos": "Volver a las demos",
+    "consult": "Contáctenos",
+    "footerLegal": "Términos, aviso legal y contacto",
+    "copyright": "© 2026 Ricta Works"
+  },
   "common": {
     "loading": "Cargando…",
     "save": "Guardar",

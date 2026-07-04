@@ -943,6 +943,178 @@ code {
   border-right: 3px solid var(--accent);
 }
 
+/* 全デモ共通：デモ版アンバーバナー */
+.demo-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 7px 16px;
+  background: var(--accent);
+  color: #1a1206;
+  font-size: 12.5px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.5;
+}
+
+/* 全デモ共通：ヘッダー右側のアクション群 */
+.app-header__actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.app-header__demos-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding-inline-end: 14px;
+  border-inline-end: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: color 0.15s;
+}
+
+.app-header__demos-link:hover {
+  color: var(--text);
+}
+
+/* 全デモ共通：フッター */
+.app-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 16px 24px;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.app-footer__link {
+  color: var(--muted);
+  transition: color 0.15s;
+}
+
+.app-footer__link:hover {
+  color: var(--text);
+}
+
+.app-footer__sep {
+  color: var(--border-strong);
+}
+
+/* 全デモ共通：右下固定のご相談ボタン */
+.consult-fab {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  z-index: 300;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 18px;
+  border-radius: var(--radius-pill);
+  background: linear-gradient(135deg, var(--primary), var(--primary-2));
+  color: var(--primary-ink);
+  font-size: 13px;
+  font-weight: 700;
+  white-space: nowrap;
+  box-shadow: var(--shadow);
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.consult-fab:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.42);
+}
+
+[dir="rtl"] .consult-fab {
+  right: auto;
+  left: 1.5rem;
+}
+
+/* /legal ページ */
+.legal {
+  max-width: 720px;
+}
+
+.legal__back {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--muted);
+  font-size: 14px;
+  transition: color 0.15s;
+}
+
+.legal__back:hover {
+  color: var(--text);
+}
+
+.legal__title {
+  margin: 18px 0 28px;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.legal__section {
+  margin-bottom: 34px;
+}
+
+.legal__heading {
+  margin-bottom: 14px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border);
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.legal__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-inline-start: 20px;
+  font-size: 14px;
+  line-height: 1.75;
+  color: var(--muted);
+}
+
+.legal__contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.legal__contact-row {
+  display: flex;
+  gap: 16px;
+}
+
+.legal__contact-label {
+  width: 72px;
+  flex-shrink: 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.legal__contact-value {
+  font-size: 14px;
+  color: var(--text);
+}
+
+.legal__link {
+  color: var(--primary-2);
+}
+
+.legal__link:hover {
+  text-decoration: underline;
+}
+
 @media (prefers-reduced-motion: reduce) {
   * {
     animation: none !important;
