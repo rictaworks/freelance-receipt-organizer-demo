@@ -1,0 +1,51 @@
+# API エラー定義（文字列リテラルの分離: CLAUDE.md §4）
+# code => { status: HTTPステータス, message: 日本語メッセージ }
+# フォールバック禁止のため、全エラーはここに明示的に定義し握りつぶさない。
+SESSION_CREATE_FAILED:
+  status: 500
+  message: "セッションの作成に失敗しました。"
+FILE_MISSING:
+  status: 400
+  message: "ファイルが指定されていません。"
+FILE_TOO_LARGE:
+  status: 413
+  message: "ファイルサイズが上限（10MB）を超えています。"
+UNSUPPORTED_MEDIA_TYPE:
+  status: 415
+  message: "JPEG または PNG のみ対応しています。"
+OCR_UNRECOGNIZABLE:
+  status: 422
+  message: "レシートとして認識できませんでした。手動で入力してください。"
+OCR_SERVICE_UNAVAILABLE:
+  status: 502
+  message: "OCRサービスに接続できませんでした。"
+RECEIPT_NOT_FOUND:
+  status: 404
+  message: "指定された領収書は存在しません。"
+INVALID_CATEGORY:
+  status: 422
+  message: "指定された勘定科目が存在しません。"
+INVALID_AMOUNT:
+  status: 422
+  message: "金額は整数で指定してください。"
+INVALID_DATE_FORMAT:
+  status: 400
+  message: "日付は YYYY-MM-DD 形式で指定してください。"
+MASTER_NOT_SEEDED:
+  status: 500
+  message: "勘定科目マスタが正しく初期化されていません。"
+INVALID_YEAR:
+  status: 400
+  message: "year は西暦の整数で指定してください。"
+PDF_GENERATION_FAILED:
+  status: 500
+  message: "帳票PDFの生成に失敗しました。"
+REPORT_NOT_FOUND:
+  status: 404
+  message: "指定された帳票は存在しません。"
+REPORT_EXPIRED:
+  status: 410
+  message: "帳票の実体が日次リセットにより削除されています。"
+INTERNAL_ERROR:
+  status: 500
+  message: "サーバ内部でエラーが発生しました。"

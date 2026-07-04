@@ -1,0 +1,11 @@
+# F7 日次リセット（JST 03:00）の設定・メッセージ（CLAUDE.md §4: 文字列は設定に分離）。
+# ゴミ箱ディレクトリ名の接頭辞。storage 配下は物理削除せず DELETE/ 配下のここへ「移動」する。
+trash_prefix: "daily-reset"
+# リセット対象の storage サブディレクトリ（アップロード画像・生成PDF）。
+storage_targets:
+  - "uploads"
+  - "reports"
+# 構造化ログのメッセージ。
+log:
+  started: "日次リセットを開始した"
+  completed: "日次リセットが完了した"

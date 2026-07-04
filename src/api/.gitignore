@@ -1,0 +1,27 @@
+# See https://help.github.com/articles/ignoring-files for more about ignoring files.
+
+# 依存・ビルド生成物
+/.bundle
+
+# ログ・一時ファイル
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
+
+# アップロード画像・生成PDF（F7 日次リセット対象。コミットしない）
+/storage/*
+!/storage/.keep
+
+# SQLite（デモ版DB。コミットしない）
+/db/*.sqlite3
+/db/*.sqlite3-*
+
+# シークレット（絶対にコミットしない: CLAUDE.md / development-principles.md）
+/config/master.key
+/config/credentials/*.key
+
+# 環境変数（コミット禁止。雛形は .env.example）
+/.env
+/.env.*
+!/.env.example

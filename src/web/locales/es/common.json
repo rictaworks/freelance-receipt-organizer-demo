@@ -1,0 +1,143 @@
+{
+  "app": {
+    "title": "Recepto Organizador de recibos",
+    "tagline": "Solo sube un recibo: organización automática hasta la vista previa del informe.",
+    "demoBadge": "Demo"
+  },
+  "nav": {
+    "home": "Inicio",
+    "receipts": "Recibos",
+    "aggregations": "Totales",
+    "reports": "Informe"
+  },
+  "common": {
+    "loading": "Cargando…",
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "confirm": "Confirmar",
+    "close": "Cerrar",
+    "edit": "Editar",
+    "retry": "Reintentar",
+    "yen": "JPY",
+    "uncategorized": "Sin categoría",
+    "required": "Obligatorio",
+    "optional": "Opcional",
+    "yes": "Sí",
+    "no": "No",
+    "none": "-"
+  },
+  "session": {
+    "statusNew": "Se ha iniciado una nueva sesión.",
+    "statusExisting": "Continuando con tu sesión existente.",
+    "resetNotice": "Esta demo reinicia todos los datos e imágenes cada día a las 03:00 JST. No se almacena ningún dato personal.",
+    "idLabel": "ID de sesión"
+  },
+  "upload": {
+    "title": "Subir un recibo",
+    "dropHint": "Arrastra y suelta un archivo aquí, o haz clic para seleccionar",
+    "selectFile": "Seleccionar archivo",
+    "changeFile": "Cambiar archivo",
+    "formats": "Formatos: JPEG / PNG",
+    "maxSize": "Tamaño máx.: 10 MB",
+    "submit": "Subir y analizar",
+    "uploading": "Subiendo y analizando…",
+    "successTitle": "Guardado",
+    "successBody": "Revisa y corrige el resultado extraído.",
+    "clientTooLarge": "El archivo supera los 10 MB.",
+    "clientWrongType": "Selecciona un archivo JPEG o PNG.",
+    "noFile": "No se ha seleccionado ningún archivo."
+  },
+  "warnings": {
+    "title": "Algunos elementos requieren tu atención",
+    "duplicate": "Ya existe un registro con la misma fecha, importe y tienda. Por favor, revísalo.",
+    "non_positive_amount": "El importe es cero o negativo (posible devolución). Por favor, revísalo.",
+    "uncategorized": "La categoría contable no está definida. Elige una categoría.",
+    "low_confidence_manual_input": "La confianza de reconocimiento es baja. Introduce la fecha y el importe manualmente."
+  },
+  "receipts": {
+    "title": "Recibos",
+    "subtitle": "Revisa y corrige los datos extraídos, y cambia las categorías contables.",
+    "empty": "Aún no hay recibos. Sube uno desde el formulario de arriba.",
+    "count": "{count} elementos",
+    "colDate": "Fecha",
+    "colStore": "Tienda",
+    "colAmount": "Importe",
+    "colCategory": "Categoría",
+    "colConfidence": "Confianza",
+    "colEdited": "Estado",
+    "colActions": "Acciones",
+    "manualInput": "Se requiere entrada manual",
+    "editedBadge": "Editado manualmente",
+    "autoBadge": "Extraído automáticamente",
+    "editRow": "Editar esta fila",
+    "placeholderDate": "AAAA-MM-DD",
+    "placeholderStore": "Introduce el nombre de la tienda",
+    "placeholderAmount": "Importe (JPY)",
+    "selectCategory": "Selecciona una categoría",
+    "savedTitle": "Actualizado",
+    "savedBody": "El recibo se ha guardado."
+  },
+  "aggregations": {
+    "title": "Totales mensuales por categoría",
+    "subtitle": "Agrega los recibos de tu sesión por mes y categoría.",
+    "yearLabel": "Año",
+    "month": "Mes",
+    "monthShort": "M{month}",
+    "monthTotal": "Total del mes",
+    "categoryColumn": "Categoría",
+    "yearlyTotalTitle": "Totales anuales por categoría",
+    "grandTotal": "Total general",
+    "empty": "No hay recibos para agregar en el año seleccionado."
+  },
+  "reports": {
+    "title": "Informe estilo estado de resultados",
+    "subtitle": "Vista previa de un informe de referencia con los totales rellenados automáticamente en los campos de gastos.",
+    "yearLabel": "Año",
+    "generate": "Generar informe",
+    "generating": "Generando informe…",
+    "previewTitle": "Vista previa",
+    "downloadPdf": "Descargar PDF",
+    "grandTotalLabel": "Gastos totales",
+    "generatedAt": "Generado el",
+    "notice": "Este informe es solo un formato de referencia y no puede usarse para la declaración fiscal real."
+  },
+  "errors": {
+    "genericTitle": "Se produjo un error",
+    "network": "No se pudo conectar con el servidor. Comprueba tu red y que el backend esté en ejecución.",
+    "traceLabel": "ID de traza",
+    "unknown": "Se produjo un error inesperado.",
+    "FILE_MISSING": "No se especificó ningún archivo.",
+    "FILE_TOO_LARGE": "El archivo supera los 10 MB.",
+    "UNSUPPORTED_MEDIA_TYPE": "Solo se admiten JPEG o PNG.",
+    "OCR_UNRECOGNIZABLE": "No se pudo reconocer como recibo. Prueba con otra imagen.",
+    "OCR_SERVICE_UNAVAILABLE": "No se pudo conectar con el servicio de análisis. Inténtalo más tarde.",
+    "VALIDATION_FAILED": "Hay un problema con tu entrada.",
+    "RECEIPT_NOT_FOUND": "El recibo especificado no existe.",
+    "INVALID_CATEGORY": "La categoría contable seleccionada no es válida.",
+    "INVALID_AMOUNT": "Introduce el importe como un número entero.",
+    "INVALID_DATE_FORMAT": "Introduce la fecha en formato AAAA-MM-DD.",
+    "INVALID_YEAR": "Indica el año como un número entero.",
+    "REPORT_NOT_FOUND": "El informe especificado no existe.",
+    "REPORT_EXPIRED": "El informe se eliminó con el reinicio diario. Vuelve a generarlo.",
+    "PDF_GENERATION_FAILED": "No se pudo generar el PDF del informe.",
+    "SESSION_CREATE_FAILED": "No se pudo crear la sesión.",
+    "MASTER_NOT_SEEDED": "La tabla maestra de categorías contables no está inicializada correctamente."
+  },
+  "a11y": {
+    "mainNav": "Navegación principal",
+    "languageSwitcher": "Selector de idioma",
+    "closeDialog": "Cerrar diálogo",
+    "closeToast": "Descartar notificación",
+    "loading": "Cargando",
+    "honeypotLabel": "Deja este campo vacío"
+  },
+  "language": {
+    "ja": "日本語",
+    "en": "English",
+    "fr": "Français",
+    "zh": "中文",
+    "ru": "Русский",
+    "es": "Español",
+    "ar": "العربية"
+  }
+}

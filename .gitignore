@@ -31,6 +31,21 @@ __pycache__/
 .venv/
 venv/
 
+# === モノレポ（src/ 配下の各サービス）: シークレット・生成物を多重防御で除外 ===
+# シークレット（ネスト配下も確実に除外）
+src/**/config/master.key
+src/**/config/credentials/*.key
+# SQLite（Rails。デモ版固定DB）
+src/**/db/*.sqlite3
+src/**/db/*.sqlite3-*
+# アップロード画像・生成PDF（F7 日次リセット対象。コミットしない）
+src/**/uploads/
+src/**/storage/
+uploads/
+# Next.js
+src/**/.next/
+src/**/node_modules/
+
 # === OS / エディタ ===
 .DS_Store
 .idea/

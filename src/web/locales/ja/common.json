@@ -1,0 +1,143 @@
+{
+  "app": {
+    "title": "Recepto 領収書オーガナイザー",
+    "tagline": "領収書をアップロードするだけで、自動整理から帳票プレビューまで。",
+    "demoBadge": "デモ版"
+  },
+  "nav": {
+    "home": "ホーム",
+    "receipts": "領収書",
+    "aggregations": "集計",
+    "reports": "帳票"
+  },
+  "common": {
+    "loading": "読み込み中…",
+    "save": "保存",
+    "cancel": "キャンセル",
+    "confirm": "確定",
+    "close": "閉じる",
+    "edit": "編集",
+    "retry": "再試行",
+    "yen": "円",
+    "uncategorized": "未分類",
+    "required": "必須",
+    "optional": "任意",
+    "yes": "はい",
+    "no": "いいえ",
+    "none": "-"
+  },
+  "session": {
+    "statusNew": "新しいセッションを開始しました。",
+    "statusExisting": "既存のセッションを継続しています。",
+    "resetNotice": "本デモではデータと画像を毎日 JST 03:00 にリセットします。個人情報は一切保存しません。",
+    "idLabel": "セッションID"
+  },
+  "upload": {
+    "title": "領収書をアップロード",
+    "dropHint": "ここにファイルをドラッグ＆ドロップ、またはクリックして選択",
+    "selectFile": "ファイルを選択",
+    "changeFile": "ファイルを変更",
+    "formats": "対応形式：JPEG / PNG",
+    "maxSize": "最大サイズ：10MB",
+    "submit": "アップロードして解析",
+    "uploading": "アップロードと解析を実行中…",
+    "successTitle": "登録しました",
+    "successBody": "解析結果を確認・修正してください。",
+    "clientTooLarge": "ファイルサイズが 10MB を超えています。",
+    "clientWrongType": "JPEG または PNG を選択してください。",
+    "noFile": "ファイルが選択されていません。"
+  },
+  "warnings": {
+    "title": "確認が必要な項目があります",
+    "duplicate": "同一の日付・金額・店名のレコードが既に存在します。内容をご確認ください。",
+    "non_positive_amount": "金額が0円以下です（返品等の可能性）。内容をご確認ください。",
+    "uncategorized": "勘定科目が未分類です。科目を選択してください。",
+    "low_confidence_manual_input": "読み取り精度が低いため、日付・金額などを手動で入力してください。"
+  },
+  "receipts": {
+    "title": "領収書一覧",
+    "subtitle": "抽出結果の確認・修正と勘定科目の変更ができます。",
+    "empty": "領収書がまだありません。上のフォームからアップロードしてください。",
+    "count": "{count} 件",
+    "colDate": "日付",
+    "colStore": "店名",
+    "colAmount": "金額",
+    "colCategory": "勘定科目",
+    "colConfidence": "読取精度",
+    "colEdited": "状態",
+    "colActions": "操作",
+    "manualInput": "要手動入力",
+    "editedBadge": "手動修正済み",
+    "autoBadge": "自動抽出",
+    "editRow": "この行を編集",
+    "placeholderDate": "YYYY-MM-DD",
+    "placeholderStore": "店名を入力",
+    "placeholderAmount": "金額（円）",
+    "selectCategory": "科目を選択",
+    "savedTitle": "更新しました",
+    "savedBody": "領収書の内容を保存しました。"
+  },
+  "aggregations": {
+    "title": "月別・科目別 集計",
+    "subtitle": "セッション内の領収書を月×勘定科目で集計します。",
+    "yearLabel": "対象年",
+    "month": "月",
+    "monthShort": "{month}月",
+    "monthTotal": "月合計",
+    "categoryColumn": "勘定科目",
+    "yearlyTotalTitle": "科目別 年間合計",
+    "grandTotal": "総合計",
+    "empty": "対象年に集計できる領収書がありません。"
+  },
+  "reports": {
+    "title": "収支内訳書風 帳票",
+    "subtitle": "集計値を経費欄へ自動転記した参考帳票をプレビューします。",
+    "yearLabel": "対象年",
+    "generate": "帳票を生成",
+    "generating": "帳票を生成中…",
+    "previewTitle": "プレビュー",
+    "downloadPdf": "PDF をダウンロード",
+    "grandTotalLabel": "経費 総合計",
+    "generatedAt": "生成日時",
+    "notice": "本帳票は参考様式であり、実際の税務申告には使用できません。"
+  },
+  "errors": {
+    "genericTitle": "エラーが発生しました",
+    "network": "サーバに接続できませんでした。ネットワークとバックエンドの起動状況をご確認ください。",
+    "traceLabel": "トレースID",
+    "unknown": "予期しないエラーが発生しました。",
+    "FILE_MISSING": "ファイルが指定されていません。",
+    "FILE_TOO_LARGE": "ファイルサイズが 10MB を超えています。",
+    "UNSUPPORTED_MEDIA_TYPE": "JPEG または PNG のみ対応しています。",
+    "OCR_UNRECOGNIZABLE": "レシートとして認識できませんでした。別の画像をお試しください。",
+    "OCR_SERVICE_UNAVAILABLE": "解析サービスに接続できませんでした。時間をおいて再試行してください。",
+    "VALIDATION_FAILED": "入力内容に誤りがあります。",
+    "RECEIPT_NOT_FOUND": "指定された領収書は存在しません。",
+    "INVALID_CATEGORY": "選択された勘定科目が正しくありません。",
+    "INVALID_AMOUNT": "金額は整数で入力してください。",
+    "INVALID_DATE_FORMAT": "日付は YYYY-MM-DD 形式で入力してください。",
+    "INVALID_YEAR": "対象年は西暦の整数で指定してください。",
+    "REPORT_NOT_FOUND": "指定された帳票は存在しません。",
+    "REPORT_EXPIRED": "帳票は日次リセットにより削除されました。再度生成してください。",
+    "PDF_GENERATION_FAILED": "帳票PDFの生成に失敗しました。",
+    "SESSION_CREATE_FAILED": "セッションの作成に失敗しました。",
+    "MASTER_NOT_SEEDED": "勘定科目マスタが正しく初期化されていません。"
+  },
+  "a11y": {
+    "mainNav": "メインナビゲーション",
+    "languageSwitcher": "言語切り替え",
+    "closeDialog": "ダイアログを閉じる",
+    "closeToast": "通知を閉じる",
+    "loading": "読み込み中",
+    "honeypotLabel": "この欄は空のままにしてください"
+  },
+  "language": {
+    "ja": "日本語",
+    "en": "English",
+    "fr": "Français",
+    "zh": "中文",
+    "ru": "Русский",
+    "es": "Español",
+    "ar": "العربية"
+  }
+}

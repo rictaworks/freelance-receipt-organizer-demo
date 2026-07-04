@@ -1,0 +1,7 @@
+{
+  "errors": {
+    "IMAGE_DECODE_FAILED": "画像のデコードに失敗しました。破損しているか、対応していない形式です。",
+    "PREPROCESS_FAILED": "画像の前処理に失敗しました。",
+    "TESSERACT_FAILED": "OCRエンジンの実行に失敗しました。"
+  }
+}

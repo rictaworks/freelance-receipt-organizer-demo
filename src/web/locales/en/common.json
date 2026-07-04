@@ -1,0 +1,143 @@
+{
+  "app": {
+    "title": "Recepto Receipt Organizer",
+    "tagline": "Just upload a receipt: auto-organize through to report preview.",
+    "demoBadge": "Demo"
+  },
+  "nav": {
+    "home": "Home",
+    "receipts": "Receipts",
+    "aggregations": "Totals",
+    "reports": "Report"
+  },
+  "common": {
+    "loading": "Loading…",
+    "save": "Save",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "close": "Close",
+    "edit": "Edit",
+    "retry": "Retry",
+    "yen": "JPY",
+    "uncategorized": "Uncategorized",
+    "required": "Required",
+    "optional": "Optional",
+    "yes": "Yes",
+    "no": "No",
+    "none": "-"
+  },
+  "session": {
+    "statusNew": "A new session has started.",
+    "statusExisting": "Continuing your existing session.",
+    "resetNotice": "This demo resets all data and images daily at 03:00 JST. No personal data is stored.",
+    "idLabel": "Session ID"
+  },
+  "upload": {
+    "title": "Upload a receipt",
+    "dropHint": "Drag and drop a file here, or click to select",
+    "selectFile": "Select file",
+    "changeFile": "Change file",
+    "formats": "Formats: JPEG / PNG",
+    "maxSize": "Max size: 10MB",
+    "submit": "Upload and analyze",
+    "uploading": "Uploading and analyzing…",
+    "successTitle": "Saved",
+    "successBody": "Please review and correct the extracted result.",
+    "clientTooLarge": "The file exceeds 10MB.",
+    "clientWrongType": "Please select a JPEG or PNG file.",
+    "noFile": "No file selected."
+  },
+  "warnings": {
+    "title": "Some items need your attention",
+    "duplicate": "A record with the same date, amount and store already exists. Please check.",
+    "non_positive_amount": "The amount is zero or negative (possible refund). Please check.",
+    "uncategorized": "The account category is not set. Please choose a category.",
+    "low_confidence_manual_input": "Recognition confidence is low. Please enter the date and amount manually."
+  },
+  "receipts": {
+    "title": "Receipts",
+    "subtitle": "Review and correct extracted data, and change account categories.",
+    "empty": "No receipts yet. Upload one from the form above.",
+    "count": "{count} items",
+    "colDate": "Date",
+    "colStore": "Store",
+    "colAmount": "Amount",
+    "colCategory": "Category",
+    "colConfidence": "Confidence",
+    "colEdited": "State",
+    "colActions": "Actions",
+    "manualInput": "Manual input needed",
+    "editedBadge": "Manually edited",
+    "autoBadge": "Auto-extracted",
+    "editRow": "Edit this row",
+    "placeholderDate": "YYYY-MM-DD",
+    "placeholderStore": "Enter store name",
+    "placeholderAmount": "Amount (JPY)",
+    "selectCategory": "Select category",
+    "savedTitle": "Updated",
+    "savedBody": "The receipt has been saved."
+  },
+  "aggregations": {
+    "title": "Monthly totals by category",
+    "subtitle": "Aggregates receipts in your session by month and category.",
+    "yearLabel": "Year",
+    "month": "Month",
+    "monthShort": "M{month}",
+    "monthTotal": "Month total",
+    "categoryColumn": "Category",
+    "yearlyTotalTitle": "Yearly totals by category",
+    "grandTotal": "Grand total",
+    "empty": "No receipts to aggregate for the selected year."
+  },
+  "reports": {
+    "title": "Statement-style report",
+    "subtitle": "Preview a reference report with totals auto-filled into the expense fields.",
+    "yearLabel": "Year",
+    "generate": "Generate report",
+    "generating": "Generating report…",
+    "previewTitle": "Preview",
+    "downloadPdf": "Download PDF",
+    "grandTotalLabel": "Total expenses",
+    "generatedAt": "Generated at",
+    "notice": "This report is a reference format only and cannot be used for actual tax filing."
+  },
+  "errors": {
+    "genericTitle": "An error occurred",
+    "network": "Could not reach the server. Please check your network and that the backend is running.",
+    "traceLabel": "Trace ID",
+    "unknown": "An unexpected error occurred.",
+    "FILE_MISSING": "No file was specified.",
+    "FILE_TOO_LARGE": "The file exceeds 10MB.",
+    "UNSUPPORTED_MEDIA_TYPE": "Only JPEG or PNG are supported.",
+    "OCR_UNRECOGNIZABLE": "Could not recognize this as a receipt. Please try another image.",
+    "OCR_SERVICE_UNAVAILABLE": "Could not reach the analysis service. Please retry later.",
+    "VALIDATION_FAILED": "There is a problem with your input.",
+    "RECEIPT_NOT_FOUND": "The specified receipt does not exist.",
+    "INVALID_CATEGORY": "The selected account category is invalid.",
+    "INVALID_AMOUNT": "Please enter the amount as an integer.",
+    "INVALID_DATE_FORMAT": "Please enter the date as YYYY-MM-DD.",
+    "INVALID_YEAR": "Please specify the year as an integer.",
+    "REPORT_NOT_FOUND": "The specified report does not exist.",
+    "REPORT_EXPIRED": "The report was removed by the daily reset. Please generate it again.",
+    "PDF_GENERATION_FAILED": "Failed to generate the report PDF.",
+    "SESSION_CREATE_FAILED": "Failed to create a session.",
+    "MASTER_NOT_SEEDED": "The account category master is not initialized correctly."
+  },
+  "a11y": {
+    "mainNav": "Main navigation",
+    "languageSwitcher": "Language switcher",
+    "closeDialog": "Close dialog",
+    "closeToast": "Dismiss notification",
+    "loading": "Loading",
+    "honeypotLabel": "Please leave this field empty"
+  },
+  "language": {
+    "ja": "日本語",
+    "en": "English",
+    "fr": "Français",
+    "zh": "中文",
+    "ru": "Русский",
+    "es": "Español",
+    "ar": "العربية"
+  }
+}
