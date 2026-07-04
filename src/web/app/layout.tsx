@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import Script from "next/script";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 // icons.ts で config.autoAddCss = false を設定してから FA を使う（上の CSS を明示 import 済み）。
 import "@/lib/icons";
@@ -26,6 +27,21 @@ export default function RootLayout({
   // 初期は ja / ltr。クライアントで I18nProvider が lang/dir を同期する。
   return (
     <html lang="ja" dir="ltr">
+      <head>
+        {/* GA4（RictaWorks 全デモ共通タグ） */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-C04W1XKS16"
+          strategy="afterInteractive"
+        />
+        <Script id="ga4" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-C04W1XKS16');
+          `}
+        </Script>
+      </head>
       <body>
         <Providers>{children}</Providers>
       </body>
