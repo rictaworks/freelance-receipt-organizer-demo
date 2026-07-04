@@ -1,0 +1,11 @@
+# 帳票（収支内訳書 風）の固定文言（文字列リテラルの分離: CLAUDE.md §4）
+title: "収支内訳書（白色申告）風 参考様式"
+notice: "本帳票は参考様式であり、実際の税務申告には使用できません。"
+name_placeholder: "（見本）"
+address_placeholder: "（見本）"
+name_label: "氏名"
+address_label: "住所"
+sales_label: "売上（収入）金額"
+expense_label: "経費"
+uncategorized_label: "未分類"
+grand_total_label: "経費合計"

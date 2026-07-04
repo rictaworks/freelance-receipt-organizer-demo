@@ -1,0 +1,143 @@
+{
+  "app": {
+    "title": "Recepto منظّم الإيصالات",
+    "tagline": "ما عليك سوى رفع الإيصال: تنظيم تلقائي حتى معاينة التقرير.",
+    "demoBadge": "نسخة تجريبية"
+  },
+  "nav": {
+    "home": "الرئيسية",
+    "receipts": "الإيصالات",
+    "aggregations": "الإجماليات",
+    "reports": "التقرير"
+  },
+  "common": {
+    "loading": "جارٍ التحميل…",
+    "save": "حفظ",
+    "cancel": "إلغاء",
+    "confirm": "تأكيد",
+    "close": "إغلاق",
+    "edit": "تعديل",
+    "retry": "إعادة المحاولة",
+    "yen": "ين",
+    "uncategorized": "غير مصنّف",
+    "required": "مطلوب",
+    "optional": "اختياري",
+    "yes": "نعم",
+    "no": "لا",
+    "none": "-"
+  },
+  "session": {
+    "statusNew": "تم بدء جلسة جديدة.",
+    "statusExisting": "متابعة جلستك الحالية.",
+    "resetNotice": "تعيد هذه النسخة التجريبية ضبط جميع البيانات والصور يوميًا الساعة 03:00 بتوقيت اليابان. لا يتم تخزين أي بيانات شخصية.",
+    "idLabel": "معرّف الجلسة"
+  },
+  "upload": {
+    "title": "رفع إيصال",
+    "dropHint": "اسحب ملفًا وأفلته هنا، أو انقر للاختيار",
+    "selectFile": "اختيار ملف",
+    "changeFile": "تغيير الملف",
+    "formats": "الصيغ: JPEG / PNG",
+    "maxSize": "الحجم الأقصى: 10 ميغابايت",
+    "submit": "رفع وتحليل",
+    "uploading": "جارٍ الرفع والتحليل…",
+    "successTitle": "تم الحفظ",
+    "successBody": "يرجى مراجعة نتيجة الاستخراج وتصحيحها.",
+    "clientTooLarge": "يتجاوز الملف 10 ميغابايت.",
+    "clientWrongType": "يرجى اختيار ملف JPEG أو PNG.",
+    "noFile": "لم يتم اختيار ملف."
+  },
+  "warnings": {
+    "title": "بعض العناصر تحتاج إلى انتباهك",
+    "duplicate": "يوجد بالفعل سجل بنفس التاريخ والمبلغ والمتجر. يرجى التحقق.",
+    "non_positive_amount": "المبلغ صفر أو سالب (احتمال استرداد). يرجى التحقق.",
+    "uncategorized": "لم يتم تعيين الفئة المحاسبية. يرجى اختيار فئة.",
+    "low_confidence_manual_input": "ثقة التعرّف منخفضة. يرجى إدخال التاريخ والمبلغ يدويًا."
+  },
+  "receipts": {
+    "title": "الإيصالات",
+    "subtitle": "راجع البيانات المستخرجة وصحّحها، وغيّر الفئات المحاسبية.",
+    "empty": "لا توجد إيصالات بعد. ارفع واحدًا من النموذج أعلاه.",
+    "count": "{count} عنصر",
+    "colDate": "التاريخ",
+    "colStore": "المتجر",
+    "colAmount": "المبلغ",
+    "colCategory": "الفئة",
+    "colConfidence": "الثقة",
+    "colEdited": "الحالة",
+    "colActions": "إجراءات",
+    "manualInput": "إدخال يدوي مطلوب",
+    "editedBadge": "تم التعديل يدويًا",
+    "autoBadge": "مستخرج تلقائيًا",
+    "editRow": "تعديل هذا الصف",
+    "placeholderDate": "YYYY-MM-DD",
+    "placeholderStore": "أدخل اسم المتجر",
+    "placeholderAmount": "المبلغ (ين)",
+    "selectCategory": "اختر فئة",
+    "savedTitle": "تم التحديث",
+    "savedBody": "تم حفظ الإيصال."
+  },
+  "aggregations": {
+    "title": "الإجماليات الشهرية حسب الفئة",
+    "subtitle": "يجمع إيصالات جلستك حسب الشهر والفئة.",
+    "yearLabel": "السنة",
+    "month": "الشهر",
+    "monthShort": "ش{month}",
+    "monthTotal": "إجمالي الشهر",
+    "categoryColumn": "الفئة",
+    "yearlyTotalTitle": "الإجماليات السنوية حسب الفئة",
+    "grandTotal": "الإجمالي الكلي",
+    "empty": "لا توجد إيصالات لتجميعها للسنة المحددة."
+  },
+  "reports": {
+    "title": "تقرير بنمط بيان الدخل والمصروفات",
+    "subtitle": "معاينة تقرير مرجعي مع الإجماليات المدرجة تلقائيًا في حقول المصروفات.",
+    "yearLabel": "السنة",
+    "generate": "إنشاء التقرير",
+    "generating": "جارٍ إنشاء التقرير…",
+    "previewTitle": "معاينة",
+    "downloadPdf": "تنزيل PDF",
+    "grandTotalLabel": "إجمالي المصروفات",
+    "generatedAt": "أُنشئ في",
+    "notice": "هذا التقرير نموذج مرجعي فقط ولا يمكن استخدامه للإقرار الضريبي الفعلي."
+  },
+  "errors": {
+    "genericTitle": "حدث خطأ",
+    "network": "تعذّر الوصول إلى الخادم. يرجى التحقق من الشبكة وتشغيل الخادم الخلفي.",
+    "traceLabel": "معرّف التتبّع",
+    "unknown": "حدث خطأ غير متوقع.",
+    "FILE_MISSING": "لم يتم تحديد ملف.",
+    "FILE_TOO_LARGE": "يتجاوز الملف 10 ميغابايت.",
+    "UNSUPPORTED_MEDIA_TYPE": "يُدعم فقط JPEG أو PNG.",
+    "OCR_UNRECOGNIZABLE": "تعذّر التعرّف عليه كإيصال. جرّب صورة أخرى.",
+    "OCR_SERVICE_UNAVAILABLE": "تعذّر الوصول إلى خدمة التحليل. أعد المحاولة لاحقًا.",
+    "VALIDATION_FAILED": "توجد مشكلة في إدخالك.",
+    "RECEIPT_NOT_FOUND": "الإيصال المحدد غير موجود.",
+    "INVALID_CATEGORY": "الفئة المحاسبية المحددة غير صالحة.",
+    "INVALID_AMOUNT": "يرجى إدخال المبلغ كعدد صحيح.",
+    "INVALID_DATE_FORMAT": "يرجى إدخال التاريخ بصيغة YYYY-MM-DD.",
+    "INVALID_YEAR": "يرجى تحديد السنة كعدد صحيح.",
+    "REPORT_NOT_FOUND": "التقرير المحدد غير موجود.",
+    "REPORT_EXPIRED": "تم حذف التقرير بواسطة إعادة الضبط اليومية. يرجى إنشاؤه مجددًا.",
+    "PDF_GENERATION_FAILED": "فشل إنشاء ملف PDF للتقرير.",
+    "SESSION_CREATE_FAILED": "فشل إنشاء الجلسة.",
+    "MASTER_NOT_SEEDED": "لم تتم تهيئة جدول الفئات المحاسبية بشكل صحيح."
+  },
+  "a11y": {
+    "mainNav": "التنقّل الرئيسي",
+    "languageSwitcher": "مبدّل اللغة",
+    "closeDialog": "إغلاق الحوار",
+    "closeToast": "تجاهل الإشعار",
+    "loading": "جارٍ التحميل",
+    "honeypotLabel": "يرجى ترك هذا الحقل فارغًا"
+  },
+  "language": {
+    "ja": "日本語",
+    "en": "English",
+    "fr": "Français",
+    "zh": "中文",
+    "ru": "Русский",
+    "es": "Español",
+    "ar": "العربية"
+  }
+}

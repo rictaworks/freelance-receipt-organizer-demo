@@ -1,0 +1,143 @@
+{
+  "app": {
+    "title": "Recepto 收据整理器",
+    "tagline": "只需上传收据，即可自动整理并预览报表。",
+    "demoBadge": "演示版"
+  },
+  "nav": {
+    "home": "首页",
+    "receipts": "收据",
+    "aggregations": "汇总",
+    "reports": "报表"
+  },
+  "common": {
+    "loading": "加载中…",
+    "save": "保存",
+    "cancel": "取消",
+    "confirm": "确认",
+    "close": "关闭",
+    "edit": "编辑",
+    "retry": "重试",
+    "yen": "日元",
+    "uncategorized": "未分类",
+    "required": "必填",
+    "optional": "可选",
+    "yes": "是",
+    "no": "否",
+    "none": "-"
+  },
+  "session": {
+    "statusNew": "已开始新的会话。",
+    "statusExisting": "正在继续现有会话。",
+    "resetNotice": "本演示每日 JST 03:00 重置所有数据和图像。不保存任何个人信息。",
+    "idLabel": "会话 ID"
+  },
+  "upload": {
+    "title": "上传收据",
+    "dropHint": "将文件拖放到此处，或点击选择",
+    "selectFile": "选择文件",
+    "changeFile": "更换文件",
+    "formats": "支持格式：JPEG / PNG",
+    "maxSize": "最大大小：10MB",
+    "submit": "上传并解析",
+    "uploading": "正在上传并解析…",
+    "successTitle": "已保存",
+    "successBody": "请确认并修正提取结果。",
+    "clientTooLarge": "文件超过 10MB。",
+    "clientWrongType": "请选择 JPEG 或 PNG 文件。",
+    "noFile": "未选择文件。"
+  },
+  "warnings": {
+    "title": "有需要确认的项目",
+    "duplicate": "已存在日期、金额和店名完全相同的记录。请确认。",
+    "non_positive_amount": "金额为零或负数（可能为退货）。请确认。",
+    "uncategorized": "尚未设置会计科目。请选择科目。",
+    "low_confidence_manual_input": "识别置信度较低，请手动输入日期和金额。"
+  },
+  "receipts": {
+    "title": "收据列表",
+    "subtitle": "可确认并修正提取数据，以及更改会计科目。",
+    "empty": "暂无收据。请从上方表单上传。",
+    "count": "{count} 项",
+    "colDate": "日期",
+    "colStore": "店名",
+    "colAmount": "金额",
+    "colCategory": "科目",
+    "colConfidence": "识别精度",
+    "colEdited": "状态",
+    "colActions": "操作",
+    "manualInput": "需手动输入",
+    "editedBadge": "已手动修正",
+    "autoBadge": "自动提取",
+    "editRow": "编辑此行",
+    "placeholderDate": "YYYY-MM-DD",
+    "placeholderStore": "输入店名",
+    "placeholderAmount": "金额（日元）",
+    "selectCategory": "选择科目",
+    "savedTitle": "已更新",
+    "savedBody": "收据内容已保存。"
+  },
+  "aggregations": {
+    "title": "按月份和科目汇总",
+    "subtitle": "按月份和会计科目汇总本会话内的收据。",
+    "yearLabel": "年份",
+    "month": "月份",
+    "monthShort": "{month}月",
+    "monthTotal": "本月合计",
+    "categoryColumn": "科目",
+    "yearlyTotalTitle": "各科目年度合计",
+    "grandTotal": "总计",
+    "empty": "所选年份没有可汇总的收据。"
+  },
+  "reports": {
+    "title": "收支明细表样式报表",
+    "subtitle": "预览将汇总值自动填入费用栏的参考报表。",
+    "yearLabel": "年份",
+    "generate": "生成报表",
+    "generating": "正在生成报表…",
+    "previewTitle": "预览",
+    "downloadPdf": "下载 PDF",
+    "grandTotalLabel": "费用总计",
+    "generatedAt": "生成时间",
+    "notice": "本报表仅为参考格式，不能用于实际税务申报。"
+  },
+  "errors": {
+    "genericTitle": "发生错误",
+    "network": "无法连接服务器。请检查网络及后端是否已启动。",
+    "traceLabel": "跟踪 ID",
+    "unknown": "发生了意外错误。",
+    "FILE_MISSING": "未指定文件。",
+    "FILE_TOO_LARGE": "文件超过 10MB。",
+    "UNSUPPORTED_MEDIA_TYPE": "仅支持 JPEG 或 PNG。",
+    "OCR_UNRECOGNIZABLE": "无法将其识别为收据。请尝试其他图像。",
+    "OCR_SERVICE_UNAVAILABLE": "无法连接解析服务。请稍后重试。",
+    "VALIDATION_FAILED": "输入内容有误。",
+    "RECEIPT_NOT_FOUND": "指定的收据不存在。",
+    "INVALID_CATEGORY": "所选会计科目无效。",
+    "INVALID_AMOUNT": "请以整数输入金额。",
+    "INVALID_DATE_FORMAT": "请以 YYYY-MM-DD 格式输入日期。",
+    "INVALID_YEAR": "请以整数指定年份。",
+    "REPORT_NOT_FOUND": "指定的报表不存在。",
+    "REPORT_EXPIRED": "报表已因每日重置而删除。请重新生成。",
+    "PDF_GENERATION_FAILED": "生成报表 PDF 失败。",
+    "SESSION_CREATE_FAILED": "创建会话失败。",
+    "MASTER_NOT_SEEDED": "会计科目主数据未正确初始化。"
+  },
+  "a11y": {
+    "mainNav": "主导航",
+    "languageSwitcher": "语言切换",
+    "closeDialog": "关闭对话框",
+    "closeToast": "关闭通知",
+    "loading": "加载中",
+    "honeypotLabel": "请将此字段留空"
+  },
+  "language": {
+    "ja": "日本語",
+    "en": "English",
+    "fr": "Français",
+    "zh": "中文",
+    "ru": "Русский",
+    "es": "Español",
+    "ar": "العربية"
+  }
+}

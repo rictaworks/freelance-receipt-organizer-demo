@@ -1,0 +1,9 @@
+# OCR 関連のしきい値・設定（文字列/数値リテラルの分離: CLAUDE.md §4）
+# 信頼度がこの値未満、かつ日付・金額とも抽出不能なら手動入力へ誘導/認識不能判定（F1）。
+low_confidence_threshold: 0.5
+# アップロード上限（10MB, F1）。
+max_file_size_bytes: 10485760
+# 受け付ける MIME タイプ（JPEG/PNG のみ, F1）。
+allowed_content_types:
+  - "image/jpeg"
+  - "image/png"

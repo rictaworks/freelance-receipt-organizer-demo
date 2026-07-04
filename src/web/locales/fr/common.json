@@ -1,0 +1,143 @@
+{
+  "app": {
+    "title": "Recepto Organisateur de reçus",
+    "tagline": "Il suffit de téléverser un reçu : classement automatique jusqu'à l'aperçu du rapport.",
+    "demoBadge": "Démo"
+  },
+  "nav": {
+    "home": "Accueil",
+    "receipts": "Reçus",
+    "aggregations": "Totaux",
+    "reports": "Rapport"
+  },
+  "common": {
+    "loading": "Chargement…",
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "confirm": "Confirmer",
+    "close": "Fermer",
+    "edit": "Modifier",
+    "retry": "Réessayer",
+    "yen": "JPY",
+    "uncategorized": "Non classé",
+    "required": "Requis",
+    "optional": "Optionnel",
+    "yes": "Oui",
+    "no": "Non",
+    "none": "-"
+  },
+  "session": {
+    "statusNew": "Une nouvelle session a démarré.",
+    "statusExisting": "Poursuite de votre session existante.",
+    "resetNotice": "Cette démo réinitialise toutes les données et images chaque jour à 03h00 JST. Aucune donnée personnelle n'est conservée.",
+    "idLabel": "ID de session"
+  },
+  "upload": {
+    "title": "Téléverser un reçu",
+    "dropHint": "Glissez-déposez un fichier ici, ou cliquez pour sélectionner",
+    "selectFile": "Choisir un fichier",
+    "changeFile": "Changer de fichier",
+    "formats": "Formats : JPEG / PNG",
+    "maxSize": "Taille max : 10 Mo",
+    "submit": "Téléverser et analyser",
+    "uploading": "Téléversement et analyse…",
+    "successTitle": "Enregistré",
+    "successBody": "Veuillez vérifier et corriger le résultat extrait.",
+    "clientTooLarge": "Le fichier dépasse 10 Mo.",
+    "clientWrongType": "Veuillez sélectionner un fichier JPEG ou PNG.",
+    "noFile": "Aucun fichier sélectionné."
+  },
+  "warnings": {
+    "title": "Certains éléments nécessitent votre attention",
+    "duplicate": "Un enregistrement avec la même date, le même montant et le même magasin existe déjà. Veuillez vérifier.",
+    "non_positive_amount": "Le montant est nul ou négatif (remboursement possible). Veuillez vérifier.",
+    "uncategorized": "La catégorie comptable n'est pas définie. Veuillez en choisir une.",
+    "low_confidence_manual_input": "La confiance de reconnaissance est faible. Veuillez saisir la date et le montant manuellement."
+  },
+  "receipts": {
+    "title": "Reçus",
+    "subtitle": "Vérifiez et corrigez les données extraites, et changez les catégories comptables.",
+    "empty": "Aucun reçu pour le moment. Téléversez-en un depuis le formulaire ci-dessus.",
+    "count": "{count} éléments",
+    "colDate": "Date",
+    "colStore": "Magasin",
+    "colAmount": "Montant",
+    "colCategory": "Catégorie",
+    "colConfidence": "Confiance",
+    "colEdited": "État",
+    "colActions": "Actions",
+    "manualInput": "Saisie manuelle requise",
+    "editedBadge": "Modifié manuellement",
+    "autoBadge": "Extrait automatiquement",
+    "editRow": "Modifier cette ligne",
+    "placeholderDate": "AAAA-MM-JJ",
+    "placeholderStore": "Saisir le nom du magasin",
+    "placeholderAmount": "Montant (JPY)",
+    "selectCategory": "Choisir une catégorie",
+    "savedTitle": "Mis à jour",
+    "savedBody": "Le reçu a été enregistré."
+  },
+  "aggregations": {
+    "title": "Totaux mensuels par catégorie",
+    "subtitle": "Agrège les reçus de votre session par mois et par catégorie.",
+    "yearLabel": "Année",
+    "month": "Mois",
+    "monthShort": "M{month}",
+    "monthTotal": "Total du mois",
+    "categoryColumn": "Catégorie",
+    "yearlyTotalTitle": "Totaux annuels par catégorie",
+    "grandTotal": "Total général",
+    "empty": "Aucun reçu à agréger pour l'année sélectionnée."
+  },
+  "reports": {
+    "title": "Rapport de type état des résultats",
+    "subtitle": "Aperçu d'un rapport de référence avec les totaux reportés dans les champs de dépenses.",
+    "yearLabel": "Année",
+    "generate": "Générer le rapport",
+    "generating": "Génération du rapport…",
+    "previewTitle": "Aperçu",
+    "downloadPdf": "Télécharger le PDF",
+    "grandTotalLabel": "Dépenses totales",
+    "generatedAt": "Généré le",
+    "notice": "Ce rapport est un format de référence uniquement et ne peut pas être utilisé pour une déclaration fiscale réelle."
+  },
+  "errors": {
+    "genericTitle": "Une erreur est survenue",
+    "network": "Impossible de joindre le serveur. Vérifiez votre réseau et que le backend est démarré.",
+    "traceLabel": "ID de trace",
+    "unknown": "Une erreur inattendue est survenue.",
+    "FILE_MISSING": "Aucun fichier n'a été spécifié.",
+    "FILE_TOO_LARGE": "Le fichier dépasse 10 Mo.",
+    "UNSUPPORTED_MEDIA_TYPE": "Seuls les formats JPEG ou PNG sont pris en charge.",
+    "OCR_UNRECOGNIZABLE": "Impossible de reconnaître ceci comme un reçu. Essayez une autre image.",
+    "OCR_SERVICE_UNAVAILABLE": "Impossible de joindre le service d'analyse. Réessayez plus tard.",
+    "VALIDATION_FAILED": "Il y a un problème avec votre saisie.",
+    "RECEIPT_NOT_FOUND": "Le reçu spécifié n'existe pas.",
+    "INVALID_CATEGORY": "La catégorie comptable sélectionnée est invalide.",
+    "INVALID_AMOUNT": "Veuillez saisir le montant sous forme d'entier.",
+    "INVALID_DATE_FORMAT": "Veuillez saisir la date au format AAAA-MM-JJ.",
+    "INVALID_YEAR": "Veuillez indiquer l'année sous forme d'entier.",
+    "REPORT_NOT_FOUND": "Le rapport spécifié n'existe pas.",
+    "REPORT_EXPIRED": "Le rapport a été supprimé par la réinitialisation quotidienne. Veuillez le régénérer.",
+    "PDF_GENERATION_FAILED": "Échec de la génération du PDF du rapport.",
+    "SESSION_CREATE_FAILED": "Échec de la création de la session.",
+    "MASTER_NOT_SEEDED": "La table des catégories comptables n'est pas correctement initialisée."
+  },
+  "a11y": {
+    "mainNav": "Navigation principale",
+    "languageSwitcher": "Sélecteur de langue",
+    "closeDialog": "Fermer la boîte de dialogue",
+    "closeToast": "Ignorer la notification",
+    "loading": "Chargement",
+    "honeypotLabel": "Veuillez laisser ce champ vide"
+  },
+  "language": {
+    "ja": "日本語",
+    "en": "English",
+    "fr": "Français",
+    "zh": "中文",
+    "ru": "Русский",
+    "es": "Español",
+    "ar": "العربية"
+  }
+}
